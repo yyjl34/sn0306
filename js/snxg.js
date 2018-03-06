@@ -58,38 +58,39 @@ $(document).ready(function () {
     })
 
     //下拉
+  
     $(".wzdhtab").mouseenter(function () {
-        $(this).children(".ngbox").slideDown("fast");
-        $(this).children(".yxk").css("display","block");
+         $(this).children(".ngbox").stop(true).slideDown("fast");
+         $(this).children(".yxk").css("display","block");
     }).mouseleave(function () {
-        //clearTimeout(t);
-        $(this).children(".ngbox").slideUp("fast");
+        //clearTimeout(wzt);
+        $(this).children(".ngbox").stop(true).slideUp("fast");
         $(this).children(".yxk").css("display","none");
     })
 
     //手机苏宁
     $(".sjsn").mouseenter(function () {
-        $(this).children(".mb").slideDown("fast");
+        $(this).children(".mb").stop(true,true).slideDown("fast");
         $(this).children(".mbyi").css("display","block");
     }).mouseleave(function () {
-        $(this).children(".mb").slideUp("fast");
+        $(this).children(".mb").stop(true,true).slideUp("fast");
         $(this).children(".mbyi").css("display","none")
     })
 
     //购物车
-    $(".sngwc").mouseenter(function () {
-        $(this).children(".ngcart").slideDown("fast");
+   $(".sngwc").mouseenter(function () {
+        $(this).children(".ngcart").stop(true).slideDown("fast");
         $(this).children(".gwcyi").css("display","block");
     }).mouseleave(function () {
-        $(this).children(".ngcart").slideUp("fast");
+        $(this).children(".ngcart").stop(true).slideUp("fast");
         $(this).children(".gwcyi").css("display","none");
     })
 
     //我的订单
     $(".wddd").mouseenter(function () {
-        $(this).children(".ngbox1").slideDown("fast");
+        $(this).children(".ngbox1").stop(true).slideDown("fast");
     }).mouseleave(function () {
-        $(this).children(".ngbox1").slideUp("fast");
+        $(this).children(".ngbox1").stop(true).slideUp("fast");
     })
 
     //楼层跳转
