@@ -291,9 +291,9 @@ $(document).ready(function () {
     
     //测导航
     $(".xinxi").on("mouseenter",function () {
-        $(this).children(".xxb").animate({left:"-55px"})
+        $(this).children(".xxb").stop(true,true).animate({left:"-55px"});
     }).on("mouseleave",function () {
-        $(this).children(".xxb").animate({left:"0"})
+        $(this).children(".xxb").stop(true,true).animate({left:"0"});
     })
 
     //头条
